@@ -239,22 +239,52 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-.button {
+::-moz-placeholder {
+  -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+::placeholder, .search_text, .button {
+  transition: all 0.3s ease-out;
+}
+
+h1, body {
+  font-family: "Aleo", serif;
 }
 
 .logo_title {
   font-family: "Magra", serif;
 }
 
-.navigation, .button {
+.navigation, .button, h2 {
   font-family: "Red Hat Text", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .start_screen {
   background-image: url("/travel/img/backgrounds/garrett-parker-DlkF4-dbCOU-unsplash 1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 765px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
 }
 
 .button {
@@ -272,6 +302,63 @@ h1, h2, h3, h4 {
 }
 .button:hover {
   background: #0a8297;
+}
+
+.preview__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 892px;
+  padding-top: 32px;
+}
+
+.preview_title {
+  padding-bottom: 46px;
+}
+
+.preview_subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-bottom: 46px;
+}
+
+.search__box {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  height: 95px;
+  padding: 25px;
+}
+
+.search_text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #F2785C;
+  width: 560px;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+}
+
+::placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
 }
 
 .header {

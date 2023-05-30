@@ -1,0 +1,38 @@
+.preview__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 892px;
+    padding-top: 32px;
+  
+}
+.preview_title {
+    padding-bottom: 46px;
+}
+.preview_subtitle {
+    @include font ($style: italic, $weight: 400, $size: 20px, $height: 24px);
+    color: $color-light;
+    padding-bottom: 46px;
+}
+
+.search__box {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    height: 95px;
+    padding: 25px;
+}
+.search_text {
+    @include font ($style: italic, $size: 24px, $height: 29px);
+    @extend %transition;
+    border: none;
+    background: none;
+    outline: none;
+    color: $color-primary;
+    width: 560px;
+}
+::placeholder {
+    @include font ($style: italic, $size: 24px, $height: 29px);
+    @extend %transition;
+    color: $color-primary;
+}

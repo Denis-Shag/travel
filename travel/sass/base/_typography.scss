@@ -1,0 +1,10 @@
+h1 {
+    @include font ($weight: 700, $size: 80px, $height: 96px);
+    @extend %font-main;
+    color: $color-light;
+}
+h2 {
+    @include font ($weight: 500, $size: 40px, $height: 53px);
+    @extend %font-hat;
+    color: $color-primary;
+}

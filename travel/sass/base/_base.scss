@@ -1,5 +1,12 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+body {
+    @extend %font-main;
+}
 .start_screen {
     background-image: url("/travel/img/backgrounds/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 765px;
 }
