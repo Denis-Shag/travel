@@ -9,7 +9,12 @@
     text-align: center;
 }
 .destinations__button {
-    padding-top: 40px;
-    text-align: center;
+    display: flex;
+    padding: 40px 0 80px;
+    justify-content: center;
 }
-
+.ico {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}

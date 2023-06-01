@@ -256,7 +256,7 @@ h1, body {
   font-family: "Magra", serif;
 }
 
-.navigation, .button, h2 {
+.navigation, .footer_title, .text, h2 {
   font-family: "Red Hat Text", sans-serif;
 }
 
@@ -269,6 +269,12 @@ h1, body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 765px;
+}
+
+.end_screen {
+  background-image: url("/travel/img/backgrounds/Rectangle 27.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -287,21 +293,43 @@ h2 {
   color: #F2785C;
 }
 
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #0D606F;
+  padding-bottom: 24px;
+}
+
+.title {
+  text-align: center;
+}
+.title_padding {
+  padding-bottom: 40px;
+}
+
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D606F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: none;
+  padding: 10px 30px;
+}
+.button:hover {
+  background: #0a8297;
+}
+
+.text {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
-  background-color: #0D606F;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-  border-radius: 10px;
-  padding: 10px 30px;
-  box-sizing: border-box;
-  border: none;
-}
-.button:hover {
-  background: #0a8297;
 }
 
 .preview__container {
@@ -365,10 +393,6 @@ h2 {
   padding: 80px 132px 97px;
 }
 
-.title {
-  text-align: center;
-}
-
 .steps__content {
   padding-top: 40px;
   display: flex;
@@ -401,8 +425,93 @@ h2 {
 }
 
 .destinations__button {
+  display: flex;
+  padding: 40px 0 80px;
+  justify-content: center;
+}
+
+.ico {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.stories {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.stories__wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.stories__content {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.stories__container {
+  display: flex;
   padding-top: 40px;
-  text-align: center;
+}
+.stories__container:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.stories__description {
+  padding-left: 40px;
+}
+
+.description_subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+}
+
+.spec_word {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.stories__button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 40px;
+}
+
+.story_img {
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  outline: none;
+  border-radius: 16px;
+  width: 400px;
+  height: 250px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__content {
+  padding: 20px 0;
+}
+
+.footer_title {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 590px;
+}
+
+.footer__ico {
+  padding-top: 15px;
+  padding-left: 328px;
+}
+
+.footer_ico {
+  margin-left: 21px;
 }
 
 .header {

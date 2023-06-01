@@ -8,3 +8,14 @@ h2 {
     @extend %font-hat;
     color: $color-primary;
 }
+h3 {
+    @include font ($size: 35px, $height: 42px);
+    color: $color-main;
+    padding-bottom: 24px;
+}
+.title {
+    text-align: center;
+    &_padding {
+        padding-bottom: 40px;
+    }
+}
