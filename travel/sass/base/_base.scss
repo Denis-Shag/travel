@@ -5,13 +5,13 @@ body {
     @extend %font-main;
 }
 .start_screen {
-    background-image: url("/travel/img/backgrounds/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg");
+    background-image: url("./travel/img/backgrounds/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 765px;
 }
 .end_screen {
-    background-image: url("/travel/img/backgrounds/Rectangle\ 27.jpg");
+    background-image: url("./travel/img/backgrounds/Rectangle\ 27.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
