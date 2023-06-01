@@ -1,0 +1,17 @@
+.header__navigation {
+    padding-right: 196px; 
+}
+.navigation {
+    @extend %font-hat;
+    @include font ($weight: 500, $size: 16px, $height: 21px);
+    display: flex;
+}
+.navigation_link {
+    list-style: none;
+    cursor: pointer;
+    color: $color-light;
+
+    &:not(:last-child) {
+        padding-right: 42px;
+    }
+}

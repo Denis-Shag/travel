@@ -1,0 +1,41 @@
+.stories {
+    background: rgba(255, 255, 255, 0.7);
+}
+.stories__wrapper {
+    width: 1200px;
+    margin: auto;
+}
+.stories__content {
+    background-color: rgba(0, 0, 0, 0);
+}
+.stories__container {
+    display: flex;
+    padding-top: 40px;
+
+    &:not(:last-child){
+        padding-bottom: 30px;
+    }
+}
+.stories__description {
+    padding-left: 40px;
+}
+.description_subtitle { 
+    @include font ($weight: 400, $size: 20px, $height: 24px);
+    color: $color-main; 
+}
+.spec_word {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.stories__button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 40px;
+}
+.story_img {
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    outline: none;
+    border-radius: 16px;
+    width: 400px;
+    height: 250px;
+}

@@ -1,0 +1,21 @@
+
+.footer__container {
+    display: flex;
+}
+.footer__content {
+    padding: 20px 0;
+
+}
+.footer_title {
+    color: $color-light;
+    @extend %font-hat;
+    @include font ($weight: 500, $size: 16px, $height: 21px);
+    padding-left: 590px;
+}
+.footer__ico {
+    padding-top: 15px;
+    padding-left: 328px;
+}
+.footer_ico {
+    margin-left: 21px;
+}
